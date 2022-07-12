@@ -17,6 +17,8 @@ int printIdentifiers(char next, va_list arg)
 	identifierStruct functs[] = {
 		{"c", print_char},
 		{"s", print_str},
+		{"d", print_int},
+		{"i", print_int},
 	};
 
 	for (functsIndex = 0; functs[functsIndex].indentifier != NULL; functsIndex++)
