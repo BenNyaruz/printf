@@ -19,11 +19,13 @@ int printIdentifiers(char next, va_list arg)
 		{"s", print_str},
 		{"d", print_int},
 		{"i", print_int},
+		{"b", print_unsignedToBinary},
 		{"u", print_unsigned},
 		{"o", print_oct},
 		{"x", print_hex},
 		{"X", print_HEX},
 		{"S", print_STR},
+		{NULL, NULL}
 	};
 
 	for (functsIndex = 0; functs[functsIndex].indentifier != NULL; functsIndex++)
